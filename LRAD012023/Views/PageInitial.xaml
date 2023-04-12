@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LRAD012023.Views.PageInitial">
+
+    <ContentPage.Content>
+        <!--fondo de la pagina principal-->
+        <StackLayout BackgroundColor="White">
+            
+            <!--imagen mostrada en la pagina principal-->
+            <Image x:Name="foto" WidthRequest="1080" HeightRequest="120" Source="ucenm.png" HorizontalOptions="Center" />
+            
+            <!--primer boton que lleva a la agenda-->
+            <Button x:Name="btnagenda" Text="Agenda"  TextColor="Black"    Clicked="Btnagenda_Clicked"               
+                    Margin="10,100,10,0"
+                    BackgroundColor="Cyan"/>
+
+            <!--segundo boton que lleva a los sitios-->
+            <Button x:Name="btnsitios" Text="Sitios"      TextColor="Black"        
+                    Margin="10,100,10,0"
+                    BackgroundColor="HotPink"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

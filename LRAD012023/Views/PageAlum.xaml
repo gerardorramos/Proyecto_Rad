@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LRAD012023.Views.PageAlum">
+    
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+
+            <Image x:Name="foto" WidthRequest="90" HeightRequest="85" Source="ucenm.png" HorizontalOptions="Center" />
+            
+            <Label Text="Nombre" TextColor="Black" HorizontalTextAlignment="Start" FontSize="20" Margin="10,0,0,0"/>
+
+            
+                
+                <Entry x:Name="txtnombre" 
+                  Margin="10,0,0,0"
+                    BackgroundColor="White"
+                   WidthRequest="50" HeightRequest="50"
+                   Keyboard="Text"
+                   TextColor="Green"
+                   />
+            
+            <Label Text="Apellido" TextColor="Black" HorizontalTextAlignment="Start" FontSize="20" Margin="10,0,0,0"/>
+
+            <Entry x:Name="txtapellidos"  Keyboard="Text" TextColor="Green"
+                   Margin="10,10,10,0"/>
+
+            <Label Text="Telefono" TextColor="Black" HorizontalTextAlignment="Start"  FontSize="20" Margin="10,0,0,0"/>
+            <Entry x:Name="txttelefono"  Keyboard="Numeric" TextColor="Green" MaxLength="8"
+                   Margin="10,10,10,0" />
+
+            <Label Text="Edad" TextColor="Black" HorizontalTextAlignment="Start" FontSize="20" Margin="10,0,0,0"/>
+
+            <Entry x:Name="txtedad" Keyboard="Numeric" TextColor="Green" MaxLength="2"
+                   Margin="10,10,10,0" />
+
+            <Label Text="País" TextColor="Black" HorizontalTextAlignment="Start" FontSize="20" Margin="10,0,0,0"/>
+
+            <Picker Title="" TitleColor="Blue" Margin="10,10,10,0" x:Name="cbpais" TextColor="Black" >
+                 <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Honduras (504)</x:String>
+                        <x:String>Costa Rica (506)</x:String>
+                        <x:String>Guatemala (502)</x:String>
+                        <x:String>El Salvador (503)</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+
+            <Label Text="Nota" TextColor="Black" HorizontalTextAlignment="Start" FontSize="20" Margin="10,0,0,0"/>
+            <Entry x:Name="txtnota"  Keyboard="Text" BackgroundColor="LightGreen"
+                                      TextColor="Black"
+                   Margin="10,10,10,0"  />
+
+            <!--<Entry x:Name="txtlatitud" Placeholder="Latitud" Keyboard="Text" TextColor="Black"
+                   Margin="10,10,10,0" IsReadOnly="True"  />
+
+            <Entry x:Name="txtlongitud" Placeholder="Longitud" Keyboard="Text" TextColor="Black"  
+                   Margin="10,10,10,0" IsReadOnly="True"  />-->
+
+            <Button x:Name="btnmostrar" Text="Salvar Contacto" Clicked="btnmostrar_Clicked"                  
+                    Margin="10,10,10,0"
+                    TextColor="White"
+                    BackgroundColor="Green"/>
+
+            <Button x:Name="btncontactos" Text="Contactos"                  
+                    Margin="10,10,10,0"
+                    TextColor="Black"
+                    BackgroundColor="Cyan"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
